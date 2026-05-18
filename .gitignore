@@ -1,6 +1,78 @@
-venv/
+# =========================
+# Python
+# =========================
 __pycache__/
-*.pyc
-.DS_Store
-.vscode/.venv/
+*.py[cod]
+*$py.class
+
+# Compiled extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
 .venv/
+venv/
+env/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# macOS
+# =========================
+.DS_Store
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# PyTorch / model outputs
+# =========================
+*.pt
+*.pth
+checkpoints/
+models/
+
+# =========================
+# Data files
+# =========================
+data/
+datasets/
+
+# =========================
+# Plots / generated outputs
+# =========================
+figures/
+outputs/
+results/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Coverage / testing
+# =========================
+.coverage
+.pytest_cache/
+
+# =========================
+# IDEs
+# =========================
+.idea/
