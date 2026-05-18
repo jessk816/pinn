@@ -45,7 +45,8 @@ env/
 *.pt
 *.pth
 checkpoints/
-models/
+models/*
+!models/*.ipynb
 
 # =========================
 # Data files
