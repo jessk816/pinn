@@ -45,7 +45,11 @@ env/
 *.pt
 *.pth
 checkpoints/
+# Ignore everything inside models
 models/*
+
+# BUT keep notebooks tracked
+!models/**/*.ipynb
 !models/*.ipynb
 
 # =========================
