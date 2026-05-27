@@ -34,7 +34,7 @@ from inputs import FrameworkInputs
 @dataclass
 class XCTData:
     """
-    Raw output from an XCT or fractographic characterisation campaign.
+    Raw output from an XCT or fractographic characterization campaign.
 
     Parameters
     ----------
@@ -228,7 +228,7 @@ def _fit_single(
 class VEDCorrelation:
     """
     Empirical correlations between EVED and defect-PDF parameters.
-    Populated from a process-window characterisation campaign.
+    Populated from a process-window characterization campaign.
 
     Each attribute is a callable  f(EVED) → parameter value.
 
