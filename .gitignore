@@ -55,8 +55,8 @@ checkpoints/
 # =========================
 # Data files
 # =========================
-data/
-datasets/
+# data/
+# datasets/
 
 # =========================
 # Plots / generated outputs
