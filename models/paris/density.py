@@ -61,7 +61,7 @@ class XCTData:
 class DefectDensityResult:
     """Output of Step 2 defect-density calculation."""
     rho_def: float           # defect number density  rho_def = N_def / V_scan  [m⁻^3]
-    expected_N_gauge: float  # expected defects in gauge volume  ⟨N⟩ = rho_def · V  [–]
+    expected_N_gauge: float  # expected defects in gauge volume  ⟨N⟩ = rho_def * V  [–]
     gauge_volume: float      # V  [m^3]
     scanned_volume: float    # V_scan  [m^3]
     N_detected: int          # number of defects detected in V_scan
@@ -121,7 +121,7 @@ class DefectPDFResult:
 def compute_defect_density(xct: XCTData, inputs: FrameworkInputs) -> DefectDensityResult:
     """
     Eq. (2): rho_def = N_def / V_scan
-    Expected defects in gauge volume: ⟨N⟩ = rho_def · V
+    Expected defects in gauge volume: ⟨N⟩ = rho_def * V
     """
     rho = xct.N_defects / xct.scanned_volume
     V_gauge = inputs.geometry.gauge_volume

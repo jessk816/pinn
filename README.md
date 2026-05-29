@@ -6,7 +6,7 @@
 
 **models**
 - paris
-    - workflow.ipynb
+    - *workflow.ipynb*
         - current working file
         - contains:
             - generated inputs

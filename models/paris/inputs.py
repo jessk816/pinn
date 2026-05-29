@@ -100,7 +100,7 @@ class AMProcessParams:
     @property
     def VED(self) -> float:
         """
-        Volumetric Energy Density  EVED = P / (v · h · t)  [J/mm^3]
+        Volumetric Energy Density  EVED = P / (v * h * t)  [J/mm^3]
         """
         denom = self.scan_speed * self.hatch_spacing * self.layer_thickness
         if denom == 0:
