@@ -5,37 +5,40 @@
     - data cleaning and exploration of Zhou
 
 **models**
-- paris
+- **paris**
     - *workflow.ipynb*
         - current working file
         - contains:
             - generated inputs
             - volume, defect density, PDF
             - max defects
-- graphs
-    - folder containing all graphs from workflow.ipynb
-- inputs.py
-    - inputs manipulation
-    - same as workflow.ipynb
-    - easier to reference later in other notebooks
-- density.py
-    - volume, defect density, PDF
-    - same as workflow.ipynb
-    - easier to reference later in other notebooks
+    -   *workflow_2.ipynb*
+        - current working directory
+        - generates synthetic data from VED
+    - graphs
+        - folder containing all graphs from workflow.ipynb
+    - inputs.py
+        - inputs manipulation
+        - same as workflow.ipynb
+        - easier to reference later in other notebooks
+    - density.py
+        - volume, defect density, PDF
+        - same as workflow.ipynb
+        - easier to reference later in other notebooks
 
-**basquin**
-- deterministic.ipynb
-    - deterministic model 
-    - predicts a single fatigue life for a given defect and stress using Basquin’s law
-    - S-N, Shozawa curves
-- probabilistic.ipynb
-    - probabilistic model
-    - predicts a distribution of fatigue lives using Basquin’s law
-    - PDFs, GEV, S-N, Shiozawa, reliability curves under fixed and varying stress levels
-- probabilistic_ved.ipynb
-    - probabilistic model using the defect density and VED as a process input that controls defect statistics
-    - predicts a distribution of fatigue lives using Basquin’s law
-    - PDFs, GEV, S-N, Shiozawa, reliability curves under fixed and varying stress levels
+- **basquin**
+    - deterministic.ipynb
+        - deterministic model 
+        - predicts a single fatigue life for a given defect and stress using Basquin’s law
+        - S-N, Shozawa curves
+    - probabilistic.ipynb
+        - probabilistic model
+        - predicts a distribution of fatigue lives using Basquin’s law
+        - PDFs, GEV, S-N, Shiozawa, reliability curves under fixed and varying stress levels
+    - probabilistic_ved.ipynb
+        - probabilistic model using the defect density and VED as a process input that controls defect statistics
+        - predicts a distribution of fatigue lives using Basquin’s law
+        - PDFs, GEV, S-N, Shiozawa, reliability curves under fixed and varying stress levels
 
 **practice**
 - shiozawa.ipynb
