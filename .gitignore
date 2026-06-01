@@ -72,6 +72,17 @@ tmp/
 temp/
 
 # =========================
+# Workflow files
+# =========================
+workflow_2_markdown_notes.md
+workflow_2_variables.xlsx
+
+# =========================
+# Practice work
+# =========================
+practice/
+
+# =========================
 # Coverage / testing
 # =========================
 .coverage
