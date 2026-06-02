@@ -6,17 +6,18 @@
 
 **models**
 - **paris**
+    -   *workflow_2.ipynb*
+        - current working directory
+        - generates synthetic data from VED
+        - **please see** notes, variable, equation, function lists, and citations here: [https://docs.google.com/document/d/1CRuVP2ta7WAxRMIw37ggpHAKsiX_LRi3ehZopM3fYvU/edit?usp=sharing]
+    - graphs
+        - folder containing all graphs from workflow.ipynb
     - *workflow.ipynb*
+        - a first draft of the workflow
         - contains:
             - generated inputs
             - volume, defect density, PDF
             - max defects
-    -   *workflow_2.ipynb*
-        - current working directory
-        - generates synthetic data from VED
-        - notes, variable, equation, function lists, and citations: [https://docs.google.com/document/d/1CRuVP2ta7WAxRMIw37ggpHAKsiX_LRi3ehZopM3fYvU/edit?usp=sharing]
-    - graphs
-        - folder containing all graphs from workflow.ipynb
     - inputs.py
         - inputs manipulation
         - same as workflow.ipynb
