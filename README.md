@@ -6,7 +6,7 @@
 
 **models**
 - **pinn**
-    - **pinn_zhou.ipynb**
+    - *pinn_zhou.ipynb*
         - a first attempt at a pinn model using the data from Zhou, S. et al. (2025)
         - parameters, techniques from literature sources are combined
     - graphs_pinn
@@ -18,7 +18,7 @@
         - **please see** notes, variable, equation, function lists, and citations here: [https://docs.google.com/document/d/1CRuVP2ta7WAxRMIw37ggpHAKsiX_LRi3ehZopM3fYvU/edit?usp=sharing]
     - graphs
         - folder containing all graphs from workflow.ipynb
-    - *workflow.ipynb*
+    - workflow.ipynb
         - a first draft of the workflow
         - contains:
             - generated inputs
