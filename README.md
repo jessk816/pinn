@@ -5,6 +5,12 @@
     - data cleaning and exploration of Zhou
 
 **models**
+- **pinn**
+    - **pinn_zhou.ipynb**
+        - a first attempt at a pinn model using the data from Zhou, S. et al. (2025)
+        - parameters, techniques from literature sources are combined
+    - graphs_pinn
+        - folder containing all the graphs from pinn_zhou.ipynb
 - **paris**
     -   *workflow_2.ipynb*
         - current working directory
