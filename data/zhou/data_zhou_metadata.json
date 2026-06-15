@@ -28,7 +28,7 @@
         "columns": [
             "stress_max",
             "deltaK",
-            "sqrt_A",
+            "sqrt_A_um",
             "l_leff",
             "Nf"
         ],
@@ -36,12 +36,11 @@
         "input_features": [
             "stress_max",
             "deltaK",
-            "sqrt_A",
+            "sqrt_A_um",
             "l_leff"
         ],
         "physics_features": [
-            "deltaK",
-            "sqrt_A"
+            "deltaK"
         ],
         "notes": ""
     },
@@ -233,19 +232,17 @@
         "n_samples": 21,
         "columns": [
             "stress_max",
-            "defect_size_m",
-            "defect_position_m",
+            "sqrt_A_um",
+            "defect_position_um",
             "Nf"
         ],
         "target": "Nf",
         "input_features": [
             "stress_max",
-            "defect_size_m",
-            "defect_position_m"
+            "sqrt_A_um",
+            "defect_position_um"
         ],
-        "physics_features": [
-            "defect_size_m"
-        ],
+        "physics_features": [],
         "notes": ""
     },
     "Case Ti-6.5Al-2Zr-Mo-V": {
@@ -255,19 +252,17 @@
         "n_samples": 30,
         "columns": [
             "stress_max",
-            "defect_size_m",
-            "defect_position_m",
+            "sqrt_A_um",
+            "defect_position_um",
             "Nf"
         ],
         "target": "Nf",
         "input_features": [
             "stress_max",
-            "defect_size_m",
-            "defect_position_m"
+            "sqrt_A_um",
+            "defect_position_um"
         ],
-        "physics_features": [
-            "defect_size_m"
-        ],
+        "physics_features": [],
         "notes": ""
     }
 }

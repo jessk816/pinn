@@ -6,11 +6,11 @@
 
 **models**
 - **pinn**
-    - *pinn_zhou.ipynb*
-        - a first attempt at a pinn model using the data from Zhou, S. et al. (2025)
+    - *pinn_zhou_slm.ipynb*
+        - a first attempt at a pinn model using the SLM data from Zhou, S. et al. (2025)
         - parameters, techniques from literature sources are combined
-    - graphs_pinn
-        - folder containing all the graphs from pinn_zhou.ipynb
+    - zhou_slm_graphs
+        - folder containing all the graphs from pinn_zhou_slm.ipynb
 - **paris**
     -   *workflow_2.ipynb*
         - current working directory
