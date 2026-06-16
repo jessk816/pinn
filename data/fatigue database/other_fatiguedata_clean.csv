@@ -1,0 +1,1 @@
+dataset_id,Nf,stress_amp,strain_amp,deltaK,dadN,fatigue_data_type,material,am_process,am_machine,power_w,scan_speed,hatch_spacing,layer_thickness,preheat_temp,build_direction,am_environment,scan_pattern,scan_rotation,fatigue_temp,fatigue_environment,r_ratio,frequency_hz,load_control,specimen_description,specimen_size_mm,Kt,E_gpa,yield_strength,uts,elongation,material_group
