@@ -91,4 +91,5 @@ practice/
 # =========================
 # IDEs
 # =========================
-.idea/
+.idea/data/fatigue database/fatigue_database_clean.json
+data/fatigue database/fatigue_database_clean.json

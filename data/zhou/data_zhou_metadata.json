@@ -1,266 +1,168 @@
 {
-    "Case 1 LZ50 steel": {
+    "S-N": {
         "case": 1,
         "material": "LZ50 steel",
         "category": "fatigue_life",
-        "n_samples": 63,
+        "n_samples": 15146,
         "columns": [
-            "stress_max",
-            "fatigue_life_cycles",
-            "log_life",
-            "temperature_k"
+            "dataset_id",
+            "lifen_cycle",
+            "stress_amplitudesa_mpa",
+            "runout"
         ],
         "target": null,
         "input_features": [
-            "stress_max",
-            "fatigue_life_cycles",
-            "log_life",
-            "temperature_k"
+            "dataset_id",
+            "lifen_cycle",
+            "stress_amplitudesa_mpa",
+            "runout"
         ],
         "physics_features": [],
         "notes": ""
     },
-    "Case 2 SLM 316l": {
+    "e-N": {
         "case": 2,
         "material": "SLM 316L",
         "category": "fracture_mechanics",
-        "n_samples": 44,
+        "n_samples": 1840,
         "columns": [
-            "stress_max",
-            "deltaK",
-            "sqrt_A_um",
-            "l_leff",
-            "Nf"
+            "dataset_id",
+            "lifen_cycle",
+            "strain_amplitudea_mm_mm",
+            "runout"
         ],
-        "target": "Nf",
+        "target": null,
         "input_features": [
-            "stress_max",
-            "deltaK",
-            "sqrt_A_um",
-            "l_leff"
-        ],
-        "physics_features": [
-            "deltaK"
-        ],
-        "notes": ""
-    },
-    "Case 3 7075_T6_ratio": {
-        "case": 3,
-        "material": "Al7075-T6",
-        "category": "fatigue_life",
-        "n_samples": 133,
-        "columns": [
-            "stress_max",
-            "r-ratio",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "r-ratio"
-        ],
-        "physics_features": [
-            "r-ratio"
-        ],
-        "notes": ""
-    },
-    "Case 4 Al2024_T4": {
-        "case": 4,
-        "material": "Al2024",
-        "category": "stress_concentration",
-        "n_samples": 120,
-        "columns": [
-            "stress_max",
-            "r-ratio",
-            "Kt",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "r-ratio",
-            "Kt"
-        ],
-        "physics_features": [
-            "r-ratio",
-            "Kt"
-        ],
-        "notes": ""
-    },
-    "Case 4 Al7175_T7511": {
-        "case": 5,
-        "material": "Al7175",
-        "category": "stress_concentration",
-        "n_samples": 266,
-        "columns": [
-            "stress_max",
-            "r-ratio",
-            "Kt",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "r-ratio",
-            "Kt"
-        ],
-        "physics_features": [
-            "r-ratio",
-            "Kt"
-        ],
-        "notes": ""
-    },
-    "Case 4 Ti-4.5Al-3V-2Fe-2Mo": {
-        "case": 6,
-        "material": "Ti-4.5Al-3V-2Fe-2Mo",
-        "category": "stress_concentration",
-        "n_samples": 61,
-        "columns": [
-            "stress_max",
-            "r-ratio",
-            "Kt",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "r-ratio",
-            "Kt"
-        ],
-        "physics_features": [
-            "r-ratio",
-            "Kt"
-        ],
-        "notes": ""
-    },
-    "Case4 ZK60A-T5": {
-        "case": 7,
-        "material": "ZK60A-T5",
-        "category": "stress_concentration",
-        "n_samples": 87,
-        "columns": [
-            "stress_max",
-            "r-ratio",
-            "Kt",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "r-ratio",
-            "Kt"
-        ],
-        "physics_features": [
-            "r-ratio",
-            "Kt"
-        ],
-        "notes": ""
-    },
-    "Case 5 AMS 5707": {
-        "case": 8,
-        "material": "AMS 5707",
-        "category": "fatigue_life",
-        "n_samples": 183,
-        "columns": [
-            "stress_amp",
-            "Nf",
-            "r-ratio",
-            "temperature_k"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_amp",
-            "r-ratio",
-            "temperature_k"
-        ],
-        "physics_features": [
-            "r-ratio"
-        ],
-        "notes": ""
-    },
-    "Case 6 Inconel 718": {
-        "case": 9,
-        "material": "Inconel 718",
-        "category": "stress_concentration",
-        "n_samples": 139,
-        "columns": [
-            "stress_max",
-            "r-ratio",
-            "Kt",
-            "temperature_k",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "r-ratio",
-            "Kt",
-            "temperature_k"
-        ],
-        "physics_features": [
-            "r-ratio",
-            "Kt"
-        ],
-        "notes": ""
-    },
-    "Case 7 7075_T6_mean": {
-        "case": 10,
-        "material": "Al7075-T6",
-        "category": "stress_concentration",
-        "n_samples": 274,
-        "columns": [
-            "stress_max",
-            "mean_stress_mpa",
-            "Kt",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "mean_stress_mpa",
-            "Kt"
-        ],
-        "physics_features": [
-            "Kt"
-        ],
-        "notes": ""
-    },
-    "Case 8 Al-Mg4.5-Mn": {
-        "case": 11,
-        "material": "Al-Mg4.5-Mn",
-        "category": "defect_informed",
-        "n_samples": 21,
-        "columns": [
-            "stress_max",
-            "sqrt_A_um",
-            "defect_position_um",
-            "Nf"
-        ],
-        "target": "Nf",
-        "input_features": [
-            "stress_max",
-            "sqrt_A_um",
-            "defect_position_um"
+            "dataset_id",
+            "lifen_cycle",
+            "strain_amplitudea_mm_mm",
+            "runout"
         ],
         "physics_features": [],
         "notes": ""
     },
-    "Case Ti-6.5Al-2Zr-Mo-V": {
-        "case": 12,
-        "material": "Ti-6.5Al-2Zr-Mo-V",
-        "category": "defect_informed",
-        "n_samples": 30,
+    "dadn": {
+        "case": 3,
+        "material": "Al7075-T6",
+        "category": "fatigue_life",
+        "n_samples": 178061,
         "columns": [
-            "stress_max",
-            "sqrt_A_um",
-            "defect_position_um",
-            "Nf"
+            "dataset_id",
+            "stress_intensity_factor_rangedeltak_mpam1_2",
+            "crack_growth_rate_da_dn_m_cycle"
         ],
-        "target": "Nf",
+        "target": null,
         "input_features": [
-            "stress_max",
-            "sqrt_A_um",
-            "defect_position_um"
+            "dataset_id",
+            "stress_intensity_factor_rangedeltak_mpam1_2",
+            "crack_growth_rate_da_dn_m_cycle"
+        ],
+        "physics_features": [],
+        "notes": ""
+    },
+    "parameter": {
+        "case": 4,
+        "material": "Al2024",
+        "category": "stress_concentration",
+        "n_samples": 2460,
+        "columns": [
+            "dataset_id",
+            "title",
+            "authors",
+            "source_of_the_publication",
+            "year_of_publication",
+            "institution",
+            "country_and_region",
+            "funding_agency",
+            "doi",
+            "types_of_fatigue_data",
+            "method_of_extraction",
+            "name_of_the_material",
+            "types_of_am",
+            "am_machine",
+            "power_w",
+            "scan_speed_mm_s",
+            "hatch_space_m",
+            "layer_thickness_m",
+            "preheat_temperature_c",
+            "direciton_of_specimen_",
+            "am_environment",
+            "scan_pattern",
+            "layer_scan_rotation_",
+            "voltage_v",
+            "current_a",
+            "speed_function",
+            "powder_feed_rate_g_s",
+            "wire_feed_rate_mm_s",
+            "types_of_feedstock",
+            "size_of_feedstock_m",
+            "processing_sequence_and_parameters",
+            "types_of_fatigue_tests",
+            "fatigue_temperature_c",
+            "fatigue_environment",
+            "load_ratio",
+            "frequency_hz",
+            "fatigue_machine",
+            "fatigue_standard",
+            "load_control",
+            "specimens_description",
+            "critical_crosssection_size_of_specimensmm",
+            "stress_concentration_factor_of_specimens",
+            "youngs_modulus_gpa",
+            "yield_strength_mpa",
+            "ultimate_tensile_strength_mpa",
+            "elongation_",
+            "rating_score"
+        ],
+        "target": null,
+        "input_features": [
+            "dataset_id",
+            "title",
+            "authors",
+            "source_of_the_publication",
+            "year_of_publication",
+            "institution",
+            "country_and_region",
+            "funding_agency",
+            "doi",
+            "types_of_fatigue_data",
+            "method_of_extraction",
+            "name_of_the_material",
+            "types_of_am",
+            "am_machine",
+            "power_w",
+            "scan_speed_mm_s",
+            "hatch_space_m",
+            "layer_thickness_m",
+            "preheat_temperature_c",
+            "direciton_of_specimen_",
+            "am_environment",
+            "scan_pattern",
+            "layer_scan_rotation_",
+            "voltage_v",
+            "current_a",
+            "speed_function",
+            "powder_feed_rate_g_s",
+            "wire_feed_rate_mm_s",
+            "types_of_feedstock",
+            "size_of_feedstock_m",
+            "processing_sequence_and_parameters",
+            "types_of_fatigue_tests",
+            "fatigue_temperature_c",
+            "fatigue_environment",
+            "load_ratio",
+            "frequency_hz",
+            "fatigue_machine",
+            "fatigue_standard",
+            "load_control",
+            "specimens_description",
+            "critical_crosssection_size_of_specimensmm",
+            "stress_concentration_factor_of_specimens",
+            "youngs_modulus_gpa",
+            "yield_strength_mpa",
+            "ultimate_tensile_strength_mpa",
+            "elongation_",
+            "rating_score"
         ],
         "physics_features": [],
         "notes": ""
