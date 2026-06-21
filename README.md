@@ -1,23 +1,54 @@
 **data**
-- data_zhou.xlsx
-    - datasets from Zhou, S. et al. (2025). A general physics-informed neural network framework for fatigue life prediction of metallic materials. Engineering Fracture Mechanics, 322, 111136.
-- data_zhou.ipynb
-    - data cleaning and exploration of Zhou
+- **fatigue database**
+    - FatigueData-AM2022.xlsx
+        - raw fatigue database for additive manufacturing materials (2022)
+    - data_fatigue2022.ipynb
+        - data cleaning and exploration of fatigue database
+    - 316l_fatiguedata_clean.csv
+        - cleaned fatigue data for 316L stainless steel
+    - fatigue_database_clean.csv
+        - cleaned full fatigue database
+    - other_fatiguedata_clean.csv
+        - cleaned fatigue data for other materials
+    - ti64_fatiguedata_clean.csv
+        - cleaned fatigue data for Ti-6Al-4V
+- **zhou**
+    - data_zhou.xlsx
+        - datasets from Zhou, S. et al. (2025). A general physics-informed neural network framework for fatigue life prediction of metallic materials. Engineering Fracture Mechanics, 322, 111136.
+    - data_zhou_cleaned.xlsx
+        - cleaned version of Zhou dataset
+    - data_zhou_metadata.json
+        - metadata for Zhou dataset
+    - data_zhou.ipynb
+        - data cleaning and exploration of Zhou
 
 **models**
+- **workflows**
+    - *workflow_2.ipynb*
+        - current working directory
+        - generates synthetic data from VED
+        - **please see** notes, variable, equation, function lists, and citations here: [https://docs.google.com/document/d/1CRuVP2ta7WAxRMIw37ggpHAKsiX_LRi3ehZopM3fYvU/edit?usp=sharing]
+    - pinn_zhou_slm.ipynb
+        - PINN model using SLM data from Zhou, S. et al. (2025)
+    - *pinn_zhou_ti.ipynb*
+        - PINN model using Ti-6Al-4V data from Zhou, S. et al. (2025)
+    - *pinn_database_ti.ipynb*
+        - PINN model using Ti-6Al-4V data from the fatigue database
+    - zhou_slm_graphs
+        - folder containing graphs from pinn_zhou_slm.ipynb
+    - zhou_ti_graphs
+        - folder containing graphs from pinn_zhou_ti.ipynb
+    - database_ti_graphs
+        - folder containing graphs from pinn_database_ti.ipynb
+    - graphs
+        - folder containing general workflow 2 graphs
 - **pinn**
     - *pinn_zhou_slm.ipynb*
         - a first attempt at a pinn model using the SLM data from Zhou, S. et al. (2025)
         - parameters, techniques from literature sources are combined
     - zhou_slm_graphs
         - folder containing all the graphs from pinn_zhou_slm.ipynb
-- **paris**
-    -   *workflow_2.ipynb*
-        - current working directory
-        - generates synthetic data from VED
-        - **please see** notes, variable, equation, function lists, and citations here: [https://docs.google.com/document/d/1CRuVP2ta7WAxRMIw37ggpHAKsiX_LRi3ehZopM3fYvU/edit?usp=sharing]
-    - graphs
-        - folder containing all graphs from workflow.ipynb
+- **practice_paris**
     - workflow.ipynb
         - a first draft of the workflow
         - contains:
@@ -32,26 +63,23 @@
         - volume, defect density, PDF
         - same as workflow.ipynb
         - easier to reference later in other notebooks
-
-- **basquin**
+- **practice_basquin**
     - deterministic.ipynb
-        - deterministic model 
-        - predicts a single fatigue life for a given defect and stress using Basquin’s law
+        - deterministic model
+        - predicts a single fatigue life for a given defect and stress using Basquin's law
         - S-N, Shozawa curves
     - probabilistic.ipynb
         - probabilistic model
-        - predicts a distribution of fatigue lives using Basquin’s law
+        - predicts a distribution of fatigue lives using Basquin's law
         - PDFs, GEV, S-N, Shiozawa, reliability curves under fixed and varying stress levels
     - probabilistic_ved.ipynb
         - probabilistic model using the defect density and VED as a process input that controls defect statistics
-        - predicts a distribution of fatigue lives using Basquin’s law
+        - predicts a distribution of fatigue lives using Basquin's law
         - PDFs, GEV, S-N, Shiozawa, reliability curves under fixed and varying stress levels
-
-**practice**
-- shiozawa.ipynb
-    - the first deterministic/probabilistic model
-- practice.ipynb
-    - neural network basics
-- practice_parislaw.ipynb
-    - neural network basics with the Paris law
-
+- **practice**
+    - shiozawa.ipynb
+        - the first deterministic/probabilistic model
+    - practice.ipynb
+        - neural network basics
+    - practice_parislaw.ipynb
+        - neural network basics with the Paris law
